@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetBites Bakery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">SweetBites Bakery</div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+                <li><a href="#about" onclick="closeMenu()">About Us</a></li>
+                <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>SweetBites Bakery</h1>
+            <h2>Freshly Baked Happiness Every Day</h2>
+            <p>
+                Welcome to SweetBites Bakery, where every cake, cupcake, cookie and drink
+                is prepared with love, freshness and quality ingredients.
+            </p>
+
+            <div class="home-buttons">
+                <a href="#menu" class="btn">View Menu</a>
+                <a href="#contact" class="btn second-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="section-title">
+            <h2>Our Menu</h2>
+            <p>Delicious bakery items with affordable prices</p>
+        </div>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img src="images/cake.webp" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and moist chocolate cake topped with creamy chocolate frosting.</p>
+                <span>RM45</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/cupcake.webp" alt="Cupcakes">
+                <h3>Cupcakes</h3>
+                <p>Soft cupcakes with smooth cream cheese topping.</p>
+                <span>RM6</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/cookies.jpg" alt="Butter Cookies">
+                <h3>Butter Cookies</h3>
+                <p>Crunchy and buttery cookies suitable for snacks and gifts.</p>
+                <span>RM12</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/brownies.jpg" alt="Brownies">
+                <h3>Chocolate Brownies</h3>
+                <p>Fudgy brownies with a rich chocolate taste and soft texture.</p>
+                <span>RM10</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/latte.webp" alt="Iced Latte">
+                <h3>Iced Latte</h3>
+                <p>Refreshing iced latte made with smooth coffee and milk.</p>
+                <span>RM8</span>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/cheesecake.jpg" alt="Cheesecake">
+                <h3>Cheesecake Slice</h3>
+                <p>Creamy cheesecake slice with a crunchy biscuit base.</p>
+                <span>RM9</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About SweetBites Bakery</h2>
+                <p>
+                    SweetBites Bakery is a small local bakery that provides fresh cakes,
+                    cupcakes, cookies, pastries and beverages. Our goal is to give customers
+                    affordable, delicious and beautifully presented baked products.
+                </p>
+
+                <p>
+                    This website is designed to help customers view our menu, check prices,
+                    explore our gallery and contact us easily. Our target customers include
+                    students, families, office workers and dessert lovers.
+                </p>
+            </div>
+
+            <div class="team">
+                <h3>Our Team</h3>
+
+                <div class="team-box">
+                    <h4>Founder</h4>
+                    <p>Manages the bakery and customer service.</p>
+                </div>
+
+                <div class="team-box">
+                    <h4>Baker</h4>
+                    <p>Prepares cakes, cookies and pastries daily.</p>
+                </div>
+
+                <div class="team-box">
+                    <h4>Designer</h4>
+                    <p>Creates product designs and social media updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="section-title">
+            <h2>Photo Gallery</h2>
+            <p>Some of our sweet creations</p>
+        </div>
+
+        <div class="slider">
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <img id="sliderImage" src="images/gallery1.jpg" alt="Bakery Gallery">
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <p>Reach us for orders and enquiries</p>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3>SweetBites Bakery</h3>
+                <p><strong>Address:</strong> 123 Jalan Bakery, Shah Alam, Selangor</p>
+                <p><strong>Phone:</strong> 012-3456789</p>
+                <p><strong>Email:</strong> info@sweetbites.com</p>
+                <p><strong>Opening Hours:</strong> Monday - Sunday, 9:00 AM - 9:00 PM</p>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/thugielan.__6?igsh=Ym10NGFvODg5NGtn" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+                </div>
+            </div>
+
+            <form class="contact-form" onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <input type="text" id="subject" placeholder="Subject">
+                <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+                <p id="formMessage"></p>
+            </form>
+
+        </div>
+
+        <div class="map">
+            <iframe
+                title="SweetBites Bakery Location"
+                src="https://www.google.com/maps?q=Shah%20Alam%20Selangor&amp;output=embed"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 SweetBites Bakery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
